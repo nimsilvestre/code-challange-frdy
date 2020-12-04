@@ -11,6 +11,7 @@ import {
 } from "../Form/FormElements";
 import SelectField from "../SelectField";
 
+
 const Makes = ({
   stepId,
   stepData,
@@ -28,7 +29,6 @@ const Makes = ({
     nextStep();
   };
 
-  
   return (
     <>
       <FormContainer>

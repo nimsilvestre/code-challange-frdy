@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 export const FormWrapper = styled.div``;
 export const FormMain = styled.form`
@@ -14,8 +13,8 @@ export const FormMain = styled.form`
 `;
 export const FormH1 = styled.h1``;
 export const Label = styled.label``;
-export const Input = styled.select`
-  width: 200px;
-  height: 50px;
+
+export const ListVehicles = styled.ul`
+
+  padding-inline-start: 0;
 `;
-export const Option = styled.option``;

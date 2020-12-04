@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 
 //Components
-import { FormH1 } from "../Form/FormElements";
+import { FormH1, ListVehicles } from "../Form/FormElements";
 import Card from "../Card";
 import Pagination from "../Pagination";
 
@@ -39,7 +39,7 @@ const Vehicles = ({
           <br />
           <button onClick={handleBack}>Back</button>
           <button onClick={() => restartSteps()}>Start Over</button>
-          <ul style={{ listStyle: "none" }}>
+          <ListVehicles style={{ listStyle: "none" }}>
             {stepData !== null ? (
               stepData && stepData.length === 0 ? (
                 <div>
@@ -66,7 +66,7 @@ const Vehicles = ({
                 ))
               )
             ) : null}
-          </ul>
+          </ListVehicles>
           <Pagination
             vehiclePerPage={vehiclePerPage}
             totalVehicles={totalVehicles}

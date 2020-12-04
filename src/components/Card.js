@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Container } from "./CardElements";
 
 const Card = ({
   make,
@@ -11,9 +12,7 @@ const Card = ({
   engineCapacity,
 }) => {
   return (
-    <div
-      style={{ color: "black", border: "2px solid gray", marginBottom: "20px" }}
-    >
+    <Container>
       <h2>
         {make} {model}
       </h2>
@@ -34,7 +33,7 @@ const Card = ({
           <strong>Engine Capacity:</strong> {engineCapacity}
         </p>
       </div>
-    </div>
+    </Container>
   );
 };
 

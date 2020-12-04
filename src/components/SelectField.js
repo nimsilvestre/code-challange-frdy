@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { Input, Option } from "./Form/FormElements";
+import { Select, Option, SelectContainer } from "./SelectFieldElements";
 
 const SelectedField = ({
   stepId,
@@ -43,10 +43,11 @@ const SelectedField = ({
   return (
     <>
       <div>
-        <Input
+        <Select
           id={stepId}
           name={stepId}
           multiple={true}
+          size="1"
           value={selectedOption}
           onChange={(e) => handleSelect(e)}
           required={required ? required : null}
@@ -54,13 +55,13 @@ const SelectedField = ({
           {Array.isArray(stepData)
             ? stepData.map((data, i) => {
                 return (
-                  <Option key={i} value={data}>
+                  <Option key={i} value={data} hidden>
                     {data}
                   </Option>
                 );
               })
             : null}
-        </Input>
+        </Select>
       </div>
     </>
   );
