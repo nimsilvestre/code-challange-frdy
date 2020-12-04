@@ -25,7 +25,7 @@ Build a simple web app that allows a user to select their car from a directory o
   reduce Boilerplate code.
 - For handling the API Errors, I have implemented a re-try call on
   dispatch redux action to a maximum of 3 tries while keeping track of
-  how many times the App tried to re-try API call.
+  how many times the App tried to re-try API call. Without the user having the perception that the re-try is happening :)
 
 >
 
