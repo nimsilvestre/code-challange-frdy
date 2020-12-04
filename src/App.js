@@ -1,5 +1,6 @@
 //React
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 //Redux
 import { unwrapResult } from "@reduxjs/toolkit";
@@ -50,7 +51,6 @@ const App = () => {
     });
     setRequestObject(clonedRequestObject);
   };
-
 
   const resetState = () => {
     setRequestObject(initialState);

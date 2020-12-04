@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { ListPagination } from "./PaginationElements";
 
 const Pagination = ({ vehiclePerPage, totalVehicles, paginate }) => {
   const pageNumbers = [];
@@ -10,7 +11,7 @@ const Pagination = ({ vehiclePerPage, totalVehicles, paginate }) => {
 
   return (
     <nav>
-      <ul style={{ display: "flex", listStyle: "none" }}>
+      <ListPagination style={{ display: "flex", listStyle: "none" }}>
         {pageNumbers.map((number) => (
           <li style={{ paddingRight: "5px" }} key={number}>
             <a onClick={() => paginate(number)} href="!#">
@@ -18,7 +19,7 @@ const Pagination = ({ vehiclePerPage, totalVehicles, paginate }) => {
             </a>
           </li>
         ))}
-      </ul>
+      </ListPagination>
     </nav>
   );
 };

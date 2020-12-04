@@ -40,7 +40,7 @@ const Form = ({
 }) => {
   const [step, setStep] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
-  const [vehiclePerPage] = useState(20);
+  const [vehiclePerPage] = useState(25);
   const dispatch = useDispatch();
 
   //Proceed to next step

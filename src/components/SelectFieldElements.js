@@ -9,6 +9,7 @@ export const SelectContainer = styled.div`
 `;
 
 export const Select = styled.select`
+  margin-top: 1em;
   margin-bottom: 1em;
   padding: 0.25em;
   border: 0;
